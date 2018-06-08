@@ -1,0 +1,60 @@
+<%= form_with(model: tirage, local: true) do |form| %>
+  <% if tirage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tirage.errors.count, "error") %> prohibited this tirage from being saved:</h2>
+
+      <ul>
+      <% tirage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <% select_numbers = p (0..49).to_a.sample(5) %>
+  <% select_exp = p (0..12).to_a.sample(2) %>
+  
+  <div class="field">
+    <%= form.label :t_num1 %>
+    <%= form.text_field :t_num1 , :value => select_numbers[0]%>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_num2 %>
+    <%= form.text_field :t_num2 , :value => select_numbers[1] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_num3 %>
+    <%= form.text_field :t_num3 , :value => select_numbers[2]%>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_num4 %>
+    <%= form.text_field :t_num4 , :value => select_numbers[3]%>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_num5 %>
+    <%= form.text_field :t_num5 , :value => select_numbers[4]%>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_exp1 %>
+    <%= form.text_field :t_exp1 , :value => select_exp[0] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_exp2 %>
+    <%= form.text_field :t_exp2 , :value => select_exp[1] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_tirage %>
+    <%= form.date_select :date_tirage %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

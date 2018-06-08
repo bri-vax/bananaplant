@@ -1,0 +1,284 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One'); //font title
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma'); //font montant Jackpot
+html{
+    height: 100%;
+   
+    margin:0;
+    padding:0;
+}
+body{
+    height: 100%;
+    
+    position :relative;
+    margin:0;
+    padding:0;
+}
+#ecrant_Acceuil{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('2019-other.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    top:0;
+    
+}
+#fond_acceuil{
+    position: relative;
+    text-align: center;
+    top: 38%;
+    margin: 0;
+    padding: 0;
+}
+
+#title_up{
+    font-size: 150px;
+    color: white;
+}
+
+
+#fond-succes{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('fond-grilles-succes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    top:0;
+    
+}
+#link-action-1{
+    font-size: 6em;
+    position: absolute;
+    bottom: 3%;
+    left: 1%;
+}
+#link-action-2{
+    font-size: 6em;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+}
+.tr-mesGrilles{
+    color: white;
+   height: 150px;
+   border: 1px solid white;
+}
+.td-mesGrilles{
+     font-size: 0.9em;
+     text-align: center;
+      border-bottom: thin solid #fff;
+     
+}
+#title-mesGrilles {
+    text-align: center;
+   font-size: 50px;
+    color: white; 
+}
+
+.sous-info {
+    position: absolute;
+    top: 70%;
+    font-size: 2.8em;
+    width: 100%;
+    text-align:center;
+    color:#aaa;
+}
+#go-input{
+    position : absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    background: none;
+    border:none;
+}
+
+#fake-body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+  background: #3a7bd5;
+  background: linear-gradient(to left, #3a7bd5, #3a6073);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.container {
+  display: block;
+  max-width: 790px;
+}
+
+
+
+
+#h1-mob{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 90px;
+  margin: 0;
+  line-height: 95px;
+  letter-spacing: 8px;
+}
+
+.title {
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+}
+.title span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, 
+               #533d4a 2px 2px, 
+               #533d4a 3px 3px, 
+               #533d4a 4px 4px, 
+               #533d4a 5px 5px, 
+               #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+}
+
+.title:nth-child(1) { color: #4ECDC4; }
+.title:nth-child(2) { color: #FF6B6B; }
+.title:nth-child(3) { color: #FFFFFF; }
+
+
+.button-3d {
+  font-size: 26px;
+  letter-spacing: 6px;
+  position:relative;
+  width: 50%;
+  display:inline-block;
+  color: white;
+  text-decoration:none;
+  border-radius:3px;
+  border:solid 1px #B2434E;
+  background:#A23E48;
+  text-align:center;
+  padding:40px 80px 40px;
+  margin: 12px;
+  
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+  -webkit-box-shadow: 1px 6px 0px #7F3038;
+  -moz-box-shadow: 1px 6px 0px #7F3038;
+  box-shadow: 2px 6px 0px #7F3038;
+}
+
+.button-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #7F3038;
+    -moz-box-shadow: 0px 2px 0px #7F3038;
+    box-shadow: 0px 2px 0px #7F3038;
+    position:relative;
+    top:4px;
+}
+
+
+#body-btn {
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+}
+#div-title{
+    font-family: 'Fjalla One', sans-serif;
+    font-size : 1.4em;
+    position: absolute;
+    top: 1%;
+    text-align:center;
+    width: 100%;
+}
+
+h2{
+  text-shadow: #533d4a 1px 2px, 
+               #533d4a 2px 4px, 
+               #533d4a 3px 6px, 
+               #533d4a 4px 8px, 
+               #533d4a 5px 10px, 
+               #533d4a 6px 12px;
+  min-width: 10px;
+  min-height: 10px;
+  margin: 0px;
+}
+#all-btn-grilles{
+    
+    position : absolute;
+    top: 7%;
+    width: 100%;
+    height: 94%;
+}
+#center-text-button{
+    position: relative;
+    left : 22.5%;
+    width: 48%;
+    padding: 40px 1% 40px;
+}
+#left-icon-button{
+ position: relative;
+ left : -51.5%;
+  width: 20%;
+  padding: 40px 20px 40px;
+}
+#right-icon-button{
+ position: relative;
+ right: 0%;
+  width: 20%;
+  padding: 40px 20px 40px;
+}
+#title_up{
+ text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: 5px;
+  top: 50%;
+  position: absolute;
+ font-size : 8.5em;
+  text-shadow: 0px 0px 0px tomato, 
+               5px 5px 0px #333, 
+               10px 10px 0px #333;
+}
+#div-title-mesgrilles{
+    font-family: 'Fjalla One', sans-serif;
+    font-size : 1.4em;
+    position: absolute;
+    top: 2%;
+    text-align:center;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+#ligne{
+     background: #3468aa;
+    
+    border-radius : 35px;
+    width: 96%;
+    margin: 2%;
+    font-size: 1em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

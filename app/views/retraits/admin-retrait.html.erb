@@ -1,0 +1,9 @@
+ <% @all_retrait.each do |retrait| %>
+  <section>
+      
+      <p>------<%= retrait.id %>-------</p>
+      <p><%= retrait.montant_retrai %></p>
+      <p><%= retrait.user_id %></p>
+      <P>---------------------------</P>
+  </section>
+ <% end %>

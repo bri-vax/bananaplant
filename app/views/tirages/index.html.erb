@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tirages</h1>
+
+<table class="blueTable">
+  <thead>
+    <tr>
+      <th>T num1</th>
+      <th>T num2</th>
+      <th>T num3</th>
+      <th>T num4</th>
+      <th>T num5</th>
+      <th>T exp1</th>
+      <th>T exp2</th>
+      <th>Date tirage</th>
+      <th>ID</th>
+      <th>Nb grilles jouer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tirages.each do |tirage| %>
+      <tr>
+        <td><%= tirage.t_num1 %></td>
+        <td><%= tirage.t_num2 %></td>
+        <td><%= tirage.t_num3 %></td>
+        <td><%= tirage.t_num4 %></td>
+        <td><%= tirage.t_num5 %></td>
+        <td><%= tirage.t_exp1 %></td>
+        <td><%= tirage.t_exp2 %></td>
+        <td><%= tirage.date_tirage %></td>
+        <td><%= tirage.id %></td>
+        <td><%= tirage.nb_jouer %></td>
+        <td><%= link_to 'Show', tirage %></td>
+        <td><%= link_to 'Edit', edit_tirage_path(tirage) %></td>
+        <td><%= link_to 'Destroy', tirage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tirage', new_tirage_path %>

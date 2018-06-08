@@ -1,0 +1,264 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+  .num {
+            width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 0.95em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('etat1-but.png');
+            background-size:100%;
+            
+        }
+    .exp {
+            width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 0.95em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('gold1-but.png');
+            background-size:100%;
+    }
+  .circle-input {
+            width: 2.1em;
+            height: 2.1em;
+            border-radius: 90%;
+            margin: 0.39em;
+            border: solid 0.15em #1f155b;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+            
+  }
+  .circle-input-blue {
+    width: 3.25em;
+            
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 1.2em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('etat1-but.png');
+            background-size:100%;
+  }
+  .circle-input-orange {
+             width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 1.2em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('gold1-but.png');
+            background-size:100%;
+  }
+  
+  .circle-submit{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+   
+    
+  }
+#phone {
+  width: 400px;
+  height: 860px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin: 0 -285px;
+  background: #fff;
+}
+#screen {
+  width: 390px;
+  height: 762px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 37.5%;
+  top: 35%;
+  margin: -260px -145px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #2C001C;
+    background-size :300%;
+    background-repeat : no-repeat;
+}
+#home {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin: 0 -18px;
+  border-radius: 50%;
+}
+#speaker {
+  width: 50px;
+  height: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  margin: 0 -25px;
+}
+
+#header {
+  height: 30px;
+  background: #353541;
+  position: relative;
+  z-index: 30;
+  cursor: grab;
+  top: -20px;
+}
+
+h2{
+  color: white;
+}
+#casino{
+  width:90%;
+  margin: 0;
+}
+.login{
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+#loginsubmit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table.redTable {
+  border: 2px solid #A40808;
+  background-color: #EEE7DB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 13px;
+}
+table.redTable tr:nth-child(even) {
+  background: #F5C8BF;
+}
+table.redTable thead {
+  background: #A40808;
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #A40808;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}

@@ -1,0 +1,64 @@
+
+<h1>Plateforme d'administration des grilles en temps réel / Procéder au tirage </h1> 
+ 
+ <%= form_tag "/admin-grilles", method: "post" do %>
+  
+    <input type="submit"  value="Lancer le dernier tirage (<%=Tirage.maximum(:id) %>)" class="circle-submit" />            
+<% end %>
+
+<%= form_tag "/admin-code", method: "post" do %>
+  
+    <input type="submit"  value="recuper les info codes (<%=Tirage.maximum(:id) %>)" class="circle-submit" />            
+<% end %>
+
+
+<%= form_tag "/admin-remun", method: "post" do %>
+  
+    <input type="submit"  value="Remunérer le dernier tirage (<%=Tirage.maximum(:id) %>)" class="circle-submit" />            
+<% end %>
+
+
+<table class="redTable">
+<thead>
+<tr>
+<th>N° grille</th>
+<th>Num 1</th>
+<th>Num 2</th>
+<th>Num 3</th>
+<th>Num 4</th>
+<th>Num 5</th>
+<th>Exp 1</th>
+<th>Exp 2</th>
+<th>User</th>
+<th>Date</th>
+<th>Tirage</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+        <% @grilles_gestion.each do |une_grille| %>
+        
+
+
+<tr>
+<td><%= une_grille.id %></td>
+<td><%= une_grille.num1 %></td>
+<td><%= une_grille.num2 %></td>
+<td><%= une_grille.num3 %></td>
+<td><%= une_grille.num4 %></td>
+<td><%= une_grille.num5 %></td>
+<td><%= une_grille.exp1 %></td>
+<td><%= une_grille.exp2 %></td>
+<td><%= une_grille.user_id %></td>
+<td><%= une_grille.created_at %></td>
+<td><%= une_grille.tirage_id %></td>
+<td><%= une_grille.code %></td>
+</tr>
+
+<% end %>
+</tbody>
+</table>
+<%= Time.now.strftime("%Y/%m/%d") %>
+
+
+

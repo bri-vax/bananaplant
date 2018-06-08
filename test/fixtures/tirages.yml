@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  t_num1: MyString
+  t_num2: MyString
+  t_num3: MyString
+  t_num4: MyString
+  t_num5: MyString
+  t_exp1: MyString
+  t_exp2: MyString
+  date_tirage: 2018-05-20
+
+two:
+  t_num1: MyString
+  t_num2: MyString
+  t_num3: MyString
+  t_num4: MyString
+  t_num5: MyString
+  t_exp1: MyString
+  t_exp2: MyString
+  date_tirage: 2018-05-20

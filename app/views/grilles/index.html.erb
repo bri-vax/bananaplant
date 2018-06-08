@@ -1,0 +1,158 @@
+
+<% if (user_signed_in?) %>
+
+
+          <div id="div-title">
+              
+                  <h2>Sélectionnez 5 numéros et 2 jokers</h2>
+          
+              
+          </div >
+                
+               <div id="all-btn-grilles">
+    
+                <section id="ligne1">
+                    <center>
+                        <button class="num all" id="but0">00</button>  <!-- l1 b1 -->
+                        <button class="num all" id="but1">01</button>  <!-- l1 b2 -->
+                        <button class="num all" id="but2">02</button>  <!-- l1 b3 -->
+                        <button class="num all" id="but3">03</button>  <!-- l1 b4 -->
+                        <button class="num all" id="but4">04</button>  <!-- l1 b5 -->
+                        <button class="num all" id="but5">05</button>  <!-- l1 b6 -->
+                        <button class="num all" id="but6">06</button>  <!-- l1 b7 -->
+                    </center>
+                </section>
+
+                <section>
+                    <center>
+                        <button class="num all" id="but7">07</button>   <!-- l2 b1 -->
+                        <button class="num all" id="but8">08</button>   <!-- l2 b2 -->
+                        <button class="num all" id="but9">09</button>   <!-- l2 b3 -->
+                        <button class="num all" id="but10">10</button>  <!-- l2 b4 -->
+                        <button class="num all" id="but11">11</button>  <!-- l2 b5 -->
+                        <button class="num all" id="but12">12</button>  <!-- l2 b6 -->
+                        <button class="num all" id="but13">13</button>  <!-- l2 b7 -->
+                    </center>
+                </section>
+
+                <section>
+                    <center>
+                        <button class="num all" id="but14">14</button>
+                        <button class="num all" id="but15">15</button>
+                        <button class="num all" id="but16">16</button>
+                        <button class="num all" id="but17">17</button>
+                        <button class="num all" id="but18">18</button>
+                        <button class="num all" id="but19">19</button>
+                        <button class="num all" id="but20">20</button>
+                    </center>
+                </section>
+
+                <section>
+                    <center>
+                        <button class="num all" id="but21">21</button>
+                        <button class="num all" id="but22">22</button>
+                        <button class="num all" id="but23">23</button>
+                        <button class="num all" id="but24">24</button>
+                        <button class="num all" id="but25">25</button>
+                        <button class="num all" id="but26">26</button>
+                        <button class="num all" id="but27">27</button>
+                    </center>
+                </section>
+                
+                <section>
+                    <center>
+                        <button class="num all" id="but28">28</button>
+                        <button class="num all" id="but29">29</button>
+                        <button class="num all" id="but30">30</button>
+                        <button class="num all" id="but31">31</button>
+                        <button class="num all" id="but32">32</button>
+                        <button class="num all" id="but33">33</button>
+                        <button class="num all" id="but34">34</button>
+                    </center>
+                </section>
+
+            
+
+                <section>
+                    <center>
+                        <button class="num all" id="but35">35</button>
+                        <button class="num all" id="but36">36</button>
+                        <button class="num all" id="but37">37</button>
+                        <button class="num all" id="but38">38</button>
+                        <button class="num all" id="but39">39</button>
+                        <button class="num all" id="but40">40</button>
+                        <button class="num all" id="but41">41</button>
+                    </center>
+                </section>
+
+                <section>
+                    <center>
+                        <button class="num all" id="but42">42</button>
+                        <button class="num all" id="but43">43</button>
+                        <button class="num all" id="but44">44</button>
+                        <button class="num all" id="but45">45</button>
+                        <button class="num all" id="but46">46</button>
+                        <button class="num all" id="but47">47</button>
+                        <button class="num all" id="but48">48</button>
+                    </center>
+                </section>
+                    
+                <section>
+                    <center>
+                        <button class="exp all" id="but-exp0">00</button>
+                        <button class="exp all" id="but-exp1">01</button>
+                        <button class="exp all" id="but-exp2">02</button>
+                        <button class="exp all" id="but-exp3">03</button>
+                        <button class="exp all" id="but-exp4">04</button>
+                        <button class="exp all" id="but-exp5">05</button>
+                        <button class="exp all" id="but-exp6">06</button>
+                    </center>
+                </section>
+                
+                <section>
+                    <center>
+                        <button class="exp all" id="but-exp7">07</button>
+                        <button class="exp all" id="but-exp8">08</button>
+                        <button class="exp all" id="but-exp9">09</button>
+                        <button class="exp all" id="but-exp10">10</button>
+                        <button class="exp all" id="but-exp11">11</button>
+                        <button class="exp all" id="but-exp12">12</button>
+                    </center>
+                </section>
+                <br>
+                <br>
+                
+           
+
+<center>
+     
+<%= form_tag "/grilles", method: "post" do %>
+  <input type="text" id="num1" name="num1" class="circle-input circle-input-blue"/> 
+  <input type="text" id="num2" name="num2" class="circle-input circle-input-blue"/> 
+  <input type="text" id="num3" name="num3" class="circle-input circle-input-blue"/> 
+  <input type="text" id="num4" name="num4" class="circle-input circle-input-blue"/> 
+  <input type="text" id="num5" name="num5" class="circle-input circle-input-blue"/> 
+  <input type="text" id="exp1" name="exp1" class="circle-input circle-input-orange"/> 
+  <input type="text" id="exp2" name="exp2" class="circle-input circle-input-orange"/><br>
+<div id ="body-btn">
+    <input type="submit"  value="Valider la grilles" class="button-3d" id="center-text-button" />            
+    
+  
+<% end %>
+<button class="button-3d" id="left-icon-button" > TRASH</button>
+<button class="button-3d" id="right-icon-button" >RDM</button>
+</div>  
+</center>
+ 
+
+
+  
+
+
+
+
+ <% else %>
+ Vous devez être connecté pour pouvoir 
+ <a href="/users/sign_in">Se connecter</a>
+<%end%>
+</div>

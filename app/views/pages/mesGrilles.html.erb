@@ -1,0 +1,26 @@
+
+<!-- <H1 id="title-mesGrilles"> Mes dernière grilles jouées</H1> -->
+        <div id="div-title-mesgrilles">
+              
+                  <h2>Mes dernières grilles jouées</h2>
+          </div >
+          
+            <div id="all-btn-grilles">
+<section>
+    <center>
+        
+        <% @grilles_per_user.each do |one_grilles_per_user| %>
+            <article  id="ligne">
+                <button class="num all" ><%= one_grilles_per_user.num1 %></button>
+                <button class="num all" ><%= one_grilles_per_user.num2 %></button>
+                <button class="num all" ><%= one_grilles_per_user.num3 %></button>
+                <button class="num all" ><%= one_grilles_per_user.num4 %></button>
+                <button class="num all" ><%= one_grilles_per_user.num5 %></button>
+                <button class="exp all" ><%= one_grilles_per_user.exp1 %></button>
+                <button class="exp all" ><%= one_grilles_per_user.exp2 %></button>
+              
+            </article>
+        <% end %>
+    </center>
+</section>
+</div>

@@ -1,0 +1,2 @@
+module TiragesHelper
+end

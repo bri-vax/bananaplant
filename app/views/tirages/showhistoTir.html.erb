@@ -1,0 +1,29 @@
+<center>
+            <H1> Info Tirage </H1>
+                <h2> Les bons numéros étaient</h2>
+            <section>
+                <button class="num"><%= @le_tirage.t_num1 %></button>
+                <button class="num"><%= @le_tirage.t_num2 %></button>
+                <button class="num"><%= @le_tirage.t_num3 %></button>
+                <button class="num"><%= @le_tirage.t_num4 %></button>
+                <button class="num"><%= @le_tirage.t_num5 %></button>
+                <button class="exp"><%= @le_tirage.t_exp1 %></button>
+                <button class="exp"><%= @le_tirage.t_exp2 %></button>
+            </section>
+            
+           <h2>Vous avez jouer :</h2> 
+           <table>
+              <% gain = 0.00 %>
+            <% @by_tirage.each do |one_grilles_per_user| %>
+            <tr class="tr-mesGrilles"> <td class="td-mesGrilles"><button class="num all" ><%= one_grilles_per_user.num1 %></button></td> <td class="td-mesGrilles"><button class="num all" ><%= one_grilles_per_user.num2 %></button></td> <td class="td-mesGrilles"><button class="num all" ><%= one_grilles_per_user.num3 %></button></td> <td class="td-mesGrilles"><button class="num all" ><%= one_grilles_per_user.num4 %></button></td> <td class="td-mesGrilles"><button class="num all" ><%= one_grilles_per_user.num5 %></button></td> 
+            <td class="td-mesGrilles"><button class="exp all" ><%= one_grilles_per_user.exp1 %></button></td> <td class="td-mesGrilles"><button class="exp all" ><%= one_grilles_per_user.exp2 %></button></td></tr>
+            <% if one_grilles_per_user.gain != nil %>
+            <% gain += one_grilles_per_user.gain%>
+            <% end %>
+            <% end %>
+            </table>
+           
+              <h2>Vous avez Gagné :</h2>
+              
+              <h1><%=  gain %> €</h1>
+</center>

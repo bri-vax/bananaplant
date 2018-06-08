@@ -1,0 +1,23 @@
+<h1> ici histo</h1>
+
+    
+    
+        
+            <% @histo.each do |tirage| %>
+            <section>
+                <center>
+                <button class="num"><%= tirage.t_num1 %></button>
+                <button class="num"><%= tirage.t_num2 %></button>
+                <button class="num"><%= tirage.t_num3 %></button>
+                <button class="num"><%= tirage.t_num4 %></button>
+                <button class="num"><%= tirage.t_num5 %></button>
+                
+                <button class="exp"><%= tirage.t_exp1 %></button>
+                <button class="exp"><%= tirage.t_exp2 %></button>
+                <button id="info"> <a href="/historique-tirage/<%= tirage.id %>"><img id="info-pic" src="/assets/info.png"></a></button>
+                <br>
+                </center>
+            </section>
+            <% end %>
+        
+

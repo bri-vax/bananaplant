@@ -1,0 +1,41 @@
+
+<div id="ecrant_Acceuil">
+<div id="fond_acceuil">
+<h1 id="title_up"> 30.000€</h1>
+    </div>
+<% if (user_signed_in?) %>
+     <%= render "layouts/navigation" %>
+    <% if current_user.balance == nil %>
+    
+        <%= form_tag "/init", method: "post" do %>
+            <input type="submit"  value="Jouer ma première grilles" class="circle-submit" />            
+        <% end %>
+    
+    <% elsif current_user.jouer_grilles >= current_user.max_grilles %>    
+   
+        <p class="sous-info"> Vous avez déjà joué toutes vos grilles</p>
+       
+    <% else %>
+   
+         <button id="go-input" onclick=window.location.href='/grilles'> </button>
+         <center>
+              <p class="sous-info"> <%= current_user.jouer_grilles %> <b> / </b><%= current_user.max_grilles %> grilles jouées</p>
+             
+         </center>
+        
+    
+    <%end%>
+    
+<% else %>
+<div class="info">
+<p class="sous-info">Veuillez vous <a href="/users/sign_in">connecter</a> ou <a href="/users/sign_up">S 'inscrire</a>.</p>
+ </div>
+<%end%>
+   
+
+
+    
+        
+   </div>
+
+
