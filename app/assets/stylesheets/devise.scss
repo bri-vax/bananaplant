@@ -2,7 +2,6 @@
 .wrapper {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
-  
   font-weight: 00;
   background: #50a3a2;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
@@ -183,3 +182,48 @@ form button:hover {
       
       
       .material-icons.md-64 { font-size: 64px; }
+      
+      
+@media only screen and (max-width: 768px) {
+  .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: 400px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 50px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+}
+
+
+.field-input {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 230px;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin: 0 auto 5px auto;
+  font-size: 20px;
+  margin-top: 10px;
+}
+form button {
+  margin-top : 10%;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 3px 5px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 80%;
+  cursor: pointer;
+  
+  transition-duration: 0.25s;
+}
+ .material-icons.md-64 { font-size: 24px; }
+}
