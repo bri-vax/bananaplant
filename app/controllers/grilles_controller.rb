@@ -9,7 +9,7 @@ class GrillesController < ApplicationController
   end
   
   def create
-    link_tirage = Tirage.maximum(:id).next
+    link_tirage = Tirage.maximum(:id) +1
     Grille.create num1: params[:num1],num2: params[:num2],num3: params[:num3],num4: params[:num4],num5: params[:num5],exp1: params[:exp1], exp2: params[:exp2], user_id: current_user.id , tirage_id: link_tirage
     current_user.jouer_grilles += 1
     current_user.save
