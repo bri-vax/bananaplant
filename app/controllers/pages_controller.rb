@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
   
   def mesGrilles
-    @grilles_per_user = Grille.where("user_id= ?", current_user).reverse.take(12)
+    @grilles_per_user = Grille.where("user_id= ?", current_user).reverse.take(10)
   end
   
   
