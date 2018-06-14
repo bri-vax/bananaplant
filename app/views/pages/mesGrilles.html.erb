@@ -1,16 +1,18 @@
-
+<% content_for :css do
+    stylesheet_link_tag 'mes-grilles'
+end %>
 <!-- <H1 id="title-mesGrilles"> Mes dernière grilles jouées</H1> -->
-        <div id="div-title-mesgrilles">
-              
-                  <h2>Mes dernières grilles jouées</h2>
-          </div >
+       <div id="back">
+           <div class="container">
+                  <h1>Mes grilles jouées</h1>
           
-            <div id="all-btn-grilles">
+          
+            <div id="all-myGrille">
 <section>
     <center>
-        
+    
         <% @grilles_per_user.each do |one_grilles_per_user| %>
-            <article  id="ligne">
+            <article  class="ligne">
                 <button class="num all" ><%= one_grilles_per_user.num1 %></button>
                 <button class="num all" ><%= one_grilles_per_user.num2 %></button>
                 <button class="num all" ><%= one_grilles_per_user.num3 %></button>
@@ -23,4 +25,18 @@
         <% end %>
     </center>
 </section>
+</div>
+</div>
+<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 </div>

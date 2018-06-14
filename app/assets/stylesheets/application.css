@@ -13,87 +13,6 @@
  *= require_tree .
  *= require_self
  */
-body{
-  max-height: 100%;
-  background-color: #330220;
-}
-
-.num {
-  width: 3.25em;
-  height: 3.25em;
-  border-radius: 90em;
-  margin: 0.25em;
-  margin-top: 1%;
-  border: none;
-  font-family: 'Righteous', cursive;
-  background-image: url("etat1-but.png");
-  background-size: 100%; 
-  font-size: 2.5em;
-}
-.exp {
-  width: 3.25em;
-  height: 3.25em;
-  border-radius: 90em;
-  margin: 0.25em;
-  margin-top: 1%;
-  border: none;
-  font-family: 'Righteous', cursive;
-  background-image: url("gold1-but.png");
-  background-size: 100%;
-  font-size: 2.5em;
-  
-}
-
-.circle-input {
-  width: 2.1em;
-  height: 2.1em;
-  border-radius: 90%;
-  margin: 0.39em;
-  border: solid 0.15em #1f155b;
-  font-family: 'Righteous', cursive;
-  text-align: center; 
-  font-size: 2.5em;
-}
-
-.circle-input-blue {
-  width: 2.8em;
-  height: 2.8em;
-  border-radius: 90em;
-  margin: 0.25em;
-  margin-top: 1.2%;
-  border: none;
-  font-family: 'Righteous', cursive;
-  background-image: url("etat1-but.png");
-  background-size: 100%;
-  font-size: 2.5em;}
-
-.circle-input-orange {
-  width: 2.8em;
-  height: 2.8em;
-  border-radius: 90em;
-  margin: 0.25em;
-  margin-top: 1.2%;
-  border: none;
-  font-family: 'Righteous', cursive;
-  background-image: url("gold1-but.png");
-  background-size: 100%;
-  font-size: 2.5em;}
-
-.circle-submit {
-  background-color: #4CAF50;
-  /* Green */
-  border: none;
-  color: white;
-  padding: 12px 27px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; 
-  font-size: 2.5em;
-}
-
 
 h2 {
   color: white; }
@@ -212,5 +131,35 @@ table.blueTable tfoot .links a {
   color: #FFFFFF;
   padding: 2px 8px;
   border-radius: 5px; }
-
+  
+  
+  .text {
+    color: white;
+  }
 /*# sourceMappingURL=application.css.map */
+
+.device-title{
+  font-size: 10em;
+}
+
+ .device-sub {
+  position:relative;
+  width: 94%;
+  display:inline-block;
+  color: white;
+  text-decoration:none;
+  border-radius:3px;
+  border:solid 1px #B2434E;
+  background:#A23E48;
+  text-align:center;
+  padding:20px 50px 20px;
+  margin: 12px;
+  
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+  -webkit-box-shadow: 1px 6px 0px #7F3038;
+  -moz-box-shadow: 1px 6px 0px #7F3038;
+  box-shadow: 2px 6px 0px #7F3038;
+}

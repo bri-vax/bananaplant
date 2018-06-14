@@ -18,7 +18,7 @@
 //= require_tree .
 
 document.addEventListener("turbolinks:load", function() {
-    
+    $('.info').prop("disabled",false);
     var count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0];
     var countJoker = [0,0,0,0,0,0,0,0,0,0,0,0,0];
     $(document).ready(function() {

@@ -1,15 +1,20 @@
+<% content_for :css do
+    stylesheet_link_tag 'devise'
+end %>
 
+<div class="wrapper">
+	<div class="container">
 <center>
-  <h2 id="title-login">Se coconecter</h2>
+  <h1>Connexion</h1>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email  %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"login-field" %>
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" , placeholder:"E-Mail", class:"field-input" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" , class:"login-field"%>
+    
+    <%= f.password_field :password, autocomplete: "off"  , placeholder:"Mot de passe", class:"field-input"%>
   </div>
 
   <% if devise_mapping.rememberable? -%>
@@ -19,15 +24,31 @@
     </div>
   <% end -%>
 
+
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <button  id="login-button"><i class="material-icons md-64">done</i></button>
   </div>
 <% end %>
 </center>
+<br>
 <%= render "devise/shared/links" %>
 
 
 	
 
+	</div>
 	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
 	

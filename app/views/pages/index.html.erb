@@ -1,4 +1,6 @@
-
+<% content_for :css do
+    stylesheet_link_tag 'home'
+end %>
 <div id="ecrant_Acceuil">
 <div id="fond_acceuil">
 <h1 id="title_up"> 30.000€</h1>
@@ -8,7 +10,7 @@
     <% if current_user.balance == nil %>
     
         <%= form_tag "/init", method: "post" do %>
-            <input type="submit"  value="Jouer ma première grilles" class="circle-submit" />            
+            <input type="submit"  value="Jouer ma première grilles" class="go-input" />            
         <% end %>
     
     <% elsif current_user.jouer_grilles >= current_user.max_grilles %>    
@@ -17,7 +19,7 @@
        
     <% else %>
    
-         <button id="go-input" onclick=window.location.href='/grilles'> </button>
+         <button class="go-input" onclick=window.location.href='/grilles'> </button>
          <center>
               <p class="sous-info"> <%= current_user.jouer_grilles %> <b> / </b><%= current_user.max_grilles %> grilles jouées</p>
              

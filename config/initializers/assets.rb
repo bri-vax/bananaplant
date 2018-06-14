@@ -12,3 +12,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w( devise.css ) #précompile Sign up - Sign in scss
+Rails.application.config.assets.precompile += %w( home.css ) #précomoile la page d'acceuil
+Rails.application.config.assets.precompile += %w( grilles.css )
+Rails.application.config.assets.precompile += %w( succes.css )
+Rails.application.config.assets.precompile += %w( mes-grilles.css )

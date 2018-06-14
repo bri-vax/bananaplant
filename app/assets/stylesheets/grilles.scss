@@ -1,16 +1,160 @@
 // Place all the styles related to the grilles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One'); //font title
+
+
+html , body{
+  height: 100%;
+   margin: 0;
+  padding: 0;
+}
+#div-title{
+    font-family: 'Fjalla One', sans-serif;
+    font-size : 2.4em;
+    color : white;
+    top: 1%;
+    text-align:center;
+    width: 100%;
+}
+h2{
+  text-shadow: #533d4a 1px 2px, 
+               #533d4a 2px 4px, 
+               #533d4a 3px 6px, 
+               #533d4a 4px 8px, 
+               #533d4a 5px 10px, 
+               #533d4a 6px 12px;
+  min-width: 10px;
+  min-height: 10px;
+  margin: 0px;
+}
+#all-btn-grilles{
+   
+    position : absolute;
+    top: 7%;
+    width: 100%;
+    height: 93%;
+    
+}
 #ligne1{
     width: 100%;
 }
-body{
-    background-color: #330220;
+.num {
+            width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 0.95em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('etat1-but.png');
+            background-size:100%;
+            font-size :2em;
 }
-#balance{
-    color:white;
-    position: absolute;
-    top: 1%;
-    right : 1%;
-    font-size : 6em;
+.exp {
+            width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 0.95em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('gold1-but.png');
+            background-size:100%;
+            font-size :2em;
+    }
+.circle-input {
+            width: 2.1em;
+            height: 2.1em;
+            border-radius: 90%;
+            margin: 0.39em;
+            border: solid 0.15em #1f155b;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+            font-size :2em;
+}
+.circle-input-blue {
+    width: 3.25em;
+            font-size :2em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 1.2em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('etat1-but.png');
+            background-size:100%;
+}
+.circle-input-orange {
+             width: 3.25em;
+            height: 3.25em;
+            border-radius: 90em;
+            margin: 0.25em;
+            margin-top: 1.2em;
+            border:none;
+            font-family: 'Righteous', cursive;
+            background-image: url('gold1-but.png');
+            background-size:100%;
+            font-size :2em;
+ }
+#center-text-button{
+    position: relative;
+    left : 22.5%;
+    width: 48%;
+    padding: 40px 1% 40px;
+}
+#left-icon-button{
+    position: relative;
+    left : -51.5%;
+    width: 20%;
+    padding: 40px 20px 40px;
+}
+#right-icon-button{
+    position: relative;
+    right: 0%;
+    width: 20%;
+    padding: 40px 20px 40px;
+}
+.button-3d {
+  font-size: 26px;
+  letter-spacing: 6px;
+  position:relative;
+  width: 50%;
+  display:inline-block;
+  color: white;
+  text-decoration:none;
+  border-radius:3px;
+  border:solid 1px #B2434E;
+  background:#A23E48;
+  text-align:center;
+  padding:40px 80px 40px;
+  margin: 12px;
+  
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+  -webkit-box-shadow: 1px 6px 0px #7F3038;
+  -moz-box-shadow: 1px 6px 0px #7F3038;
+  box-shadow: 2px 6px 0px #7F3038;
+}
+
+.button-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #7F3038;
+    -moz-box-shadow: 0px 2px 0px #7F3038;
+    box-shadow: 0px 2px 0px #7F3038;
+    position:relative;
+    top:4px;
+}
+
+
+#body-btn {
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
 }

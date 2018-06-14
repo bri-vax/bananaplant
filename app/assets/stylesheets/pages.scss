@@ -17,33 +17,6 @@ body{
     margin:0;
     padding:0;
 }
-#ecrant_Acceuil{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url('2019-other.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin:0;
-    padding:0;
-    top:0;
-    
-}
-#fond_acceuil{
-    position: relative;
-    text-align: center;
-    top: 38%;
-    margin: 0;
-    padding: 0;
-}
-
-#title_up{
-    font-size: 150px;
-    color: white;
-}
-
-
 #fond-succes{
     position: absolute;
     height: 100%;
@@ -55,7 +28,6 @@ body{
     margin:0;
     padding:0;
     top:0;
-    
 }
 #link-action-1{
     font-size: 6em;
@@ -86,23 +58,8 @@ body{
     color: white; 
 }
 
-.sous-info {
-    position: absolute;
-    top: 70%;
-    font-size: 2.8em;
-    width: 100%;
-    text-align:center;
-    color:#aaa;
-}
-#go-input{
-    position : absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
-    height: 20%;
-    background: none;
-    border:none;
-}
+
+
 
 #fake-body {
   height: 100%;
@@ -272,13 +229,5 @@ h2{
     letter-spacing: 2px;
 }
 
-#ligne{
-     background: #3468aa;
-    
-    border-radius : 35px;
-    width: 96%;
-    margin: 2%;
-    font-size: 1em;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
+
+

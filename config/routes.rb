@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   post 'grilles' => 'grilles#create'
   post 'retrait-form' => 'retraits#create'
   get 'admin-retrait' => 'retraits#adminRetrait'
-  
+  get "report" => "reports#index"
   devise_for :users
   root 'pages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

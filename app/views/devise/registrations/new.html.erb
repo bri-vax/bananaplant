@@ -1,29 +1,64 @@
-<h2>Sign up</h2>
+<% content_for :css do
+    stylesheet_link_tag 'devise'
+end %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<div class="wrapper">
+	<div class="container">
+		<h1>Inscription</h1>
+
+
+<%= form_for(resource, as: resource_name, class:"form", url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" , placeholder:"Mail", class:"field-input" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+   
+    <%= f.email_field :fullname, autofocus: true , placeholder:"Nom" , class:"field-input"%>
+  </div>
+  
+  
+  
+  <div class="field">
+  
+    <%= f.email_field :phone_number, autofocus: true , placeholder:"Téléphone" , class:"field-input"%>
+  </div>
+
+  <div class="field">
+  
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off" , placeholder:"Mot de passe", class:"field-input"%>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    
+    <%= f.password_field :password_confirmation, autocomplete: "off" , placeholder:"Mot de passe (2)" , class:"field-input"%>
   </div>
-
+</center>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <button  id="login-button"><i class="material-icons md-64">done</i></button>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>

@@ -1,10 +1,16 @@
-<h1> ici histo</h1>
 
+<% content_for :css do
+    stylesheet_link_tag 'mes-grilles'
+end %>
+
+<div id="back">
+           <div class="container">
+                  <h1>Les tirages</h1>
     
     
         
             <% @histo.each do |tirage| %>
-            <section>
+                <section>
                 <center>
                 <button class="num"><%= tirage.t_num1 %></button>
                 <button class="num"><%= tirage.t_num2 %></button>
@@ -14,10 +20,23 @@
                 
                 <button class="exp"><%= tirage.t_exp1 %></button>
                 <button class="exp"><%= tirage.t_exp2 %></button>
-                <button id="info"> <a href="/historique-tirage/<%= tirage.id %>"><img id="info-pic" src="/assets/info.png"></a></button>
-                <br>
+                <a class="info" href="/historique-tirage/<%= tirage.id %>"><i class="material-icons md-64"> poll</i></a>
+                <div class="separate"></div>
                 </center>
             </section>
             <% end %>
         
-
+</div>
+<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>

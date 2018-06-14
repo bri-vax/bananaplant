@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_03_144033) do
+ActiveRecord::Schema.define(version: 2018_06_10_120541) do
 
   create_table "grilles", force: :cascade do |t|
     t.string "num1"
@@ -28,6 +28,27 @@ ActiveRecord::Schema.define(version: 2018_06_03_144033) do
     t.decimal "gain"
     t.index ["tirage_id"], name: "index_grilles_on_tirage_id"
     t.index ["user_id"], name: "index_grilles_on_user_id"
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.integer "r_rank1"
+    t.integer "r_rank2"
+    t.integer "r_rank3"
+    t.integer "r_rank4"
+    t.integer "r_rank5"
+    t.integer "r_rank6"
+    t.integer "r_rank7"
+    t.integer "r_rank8"
+    t.integer "r_rank9"
+    t.integer "r_rank10"
+    t.integer "r_rank11"
+    t.integer "r_rank12"
+    t.integer "r_rank13"
+    t.integer "r_rank14"
+    t.integer "r_rank15"
+    t.integer "r_rank16"
+    t.integer "r_rank17"
+    t.integer "r_rank18"
   end
 
   create_table "retraits", force: :cascade do |t|
